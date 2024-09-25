@@ -1,0 +1,13 @@
+dconf/
+discord/
+Electron/
+go/
+gtk-3.0/
+htop/
+pavucontrol.ini
+pulse/
+rofi/
+spotify/
+systemd/
+TeamSpeak/
+yay/
