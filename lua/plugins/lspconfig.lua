@@ -24,7 +24,7 @@ return {
 				{ "<leader>F", vim.lsp.buf.format, desc = "Format buffer", buffer = bufnr },
 			})
 		end
-		require("lspconfig").tsserver.setup({ capabilities = capabilities })
+		require("lspconfig").ts_ls.setup({ capabilities = capabilities })
 		require("lspconfig").rust_analyzer.setup({ capabilities = capabilities })
 	end,
 }
