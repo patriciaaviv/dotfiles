@@ -1,3 +1,8 @@
+
+vim.cmd([[autocmd VimEnter * if !argc() | Alpha | endif]])
+-- vim.cmd([[autocmd VimEnter * lua require("auto-session").resume()]])
+
+
 -- Enable line numbers
 vim.o.number = true
 
@@ -25,3 +30,5 @@ vim.o.mouse = "a"
 
 -- Set leader key
 vim.g.mapleader = " "
+
+
