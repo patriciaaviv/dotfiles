@@ -48,6 +48,10 @@ hc keybind $Mod-Shift-j shift down
 hc keybind $Mod-Shift-k shift up
 hc keybind $Mod-Shift-l shift right
 
+
+# set vertical mode
+hc keybind $Mod-v split vertical 0.5
+
 # splitting frames creates an empty frame at the specified direction
 hc keybind $Mod-u split bottom 0.5
 hc keybind $Mod-o split right 0.5
