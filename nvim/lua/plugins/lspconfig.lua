@@ -24,7 +24,16 @@ return {
 				{ "<leader>F", vim.lsp.buf.format, desc = "Format buffer", buffer = bufnr },
 			})
 		end
-		require("lspconfig").ts_ls.setup({ capabilities = capabilities, on_attach = on_attach })
 		require("lspconfig").rust_analyzer.setup({ capabilities = capabilities, on_attach = on_attach })
-	end,
+        require("lspconfig").clangd.setup({ capabilities = capabilities, on_attach = on_attach })
+	    require("lspconfig").clangd.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			cmd = { "clangd", "--background-index", "--clang-tidy" },
+			init_options = {
+				clangdFileStatus = true, -- Enable file status updates
+				usePlaceholders = true,  -- Enable placeholders in function signatures
+			},
+		})
+    end,
 }
