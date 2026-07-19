@@ -1,6 +1,6 @@
 return {
     "nvim-lualine/lualine.nvim",
-    dependencies = { "kyazdani42/nvim-web-devicons", opt = true }, -- optional, for file icons
+    dependencies = { "nvim-tree/nvim-web-devicons" }, -- optional, for file icons (configured in nvim-web-devicons.lua)
     config = function()
         require('lualine').setup({
             options = {
