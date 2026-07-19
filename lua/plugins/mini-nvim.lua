@@ -2,8 +2,8 @@ return {
   "echasnovski/mini.nvim",
   version = false,  -- Optional: always use the latest version
   config = function()
-    require('mini.statusline').setup()
-    require('mini.tabline').setup()
-
+    -- statusline/tabline are handled by lualine.nvim instead
+    require('mini.comment').setup()
+    require('mini.surround').setup()
   end,
 }

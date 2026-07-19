@@ -1,7 +1,7 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	opts = {
-		ensure_installed = { "c", "java", "haskell", "lua", "rust", "python", "cpp", "typescript", "java" },
+		ensure_installed = { "c", "java", "lua", "rust", "python", "cpp", "typescript", "go" },
 		sync_install = false,
 		highlight = {
 			enable = true,

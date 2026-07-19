@@ -1,6 +1,5 @@
 
 vim.cmd([[autocmd VimEnter * if !argc() | Alpha | endif]])
--- vim.cmd([[autocmd VimEnter * lua require("auto-session").resume()]])
 
 
 -- Enable line numbers
@@ -27,6 +26,9 @@ vim.o.clipboard = "unnamedplus"
 vim.o.showmatch = true
 vim.o.ruler = true
 vim.o.mouse = "a"
+
+-- Persist undo history across sessions
+vim.o.undofile = true
 
 -- Set leader key
 vim.g.mapleader = " "
